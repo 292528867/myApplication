@@ -20,5 +20,7 @@
     <string name="saveParam">保存参数</string>
     <string name="resumeParam">恢复参数</string>
     <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_zoom_image_view">ZoomImageView</string>
+    <string name="title_activity_image_view">ImageViewActivity</string>
 
 </resources>

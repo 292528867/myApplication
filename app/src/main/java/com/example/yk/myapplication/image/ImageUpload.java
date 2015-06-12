@@ -1,4 +1,4 @@
-package com.example.yk.myapplication.imageupload;
+package com.example.yk.myapplication.image;
 
 import android.app.Activity;
 import android.app.AlertDialog;

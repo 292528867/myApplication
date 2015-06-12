@@ -4,8 +4,10 @@
 
     <uses-sdk android:minSdkVersion="11" />
 
-    <!--调用相机-->
-    <uses-feature android:name="android.hardware.Camera" android:required="true"/>
+    <!-- 调用相机 -->
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
 
     <auses-permission android:name="android.permission.READ_PHONE_STATE" />
     <auses-permission
@@ -16,11 +18,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
+
     <auses-permission android:name="android.permission.READ_PHONE_STATE" />
+
 
 
     <application
@@ -63,11 +66,11 @@
             android:parentActivityName=".MainActivity" >
         </activity>
         <activity
-            android:name=".imageupload.ImageUpload"
+            android:name=".image.ImageUpload"
             android:label="@string/title_activity_image_upload" >
         </activity>
         <activity
-            android:name=".imageupload.UploadImageTest"
+            android:name=".image.UploadImageTest"
             android:label="@string/title_activity_upload_image_test" >
         </activity>
         <activity
@@ -77,6 +80,14 @@
         <activity
             android:name=".camera.CameraActivity"
             android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name=".image.ZoomImageView"
+            android:label="@string/title_activity_zoom_image_view" >
+        </activity>
+        <activity
+            android:name=".image.ImageViewActivity"
+            android:label="@string/title_activity_image_view" >
         </activity>
     </application>
 

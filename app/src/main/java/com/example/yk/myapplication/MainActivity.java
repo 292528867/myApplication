@@ -10,7 +10,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.yk.myapplication.activity.ActivityDemo;
-import com.example.yk.myapplication.imageupload.ImageUpload;
+import com.example.yk.myapplication.camera.CameraActivity;
+import com.example.yk.myapplication.image.ImageUpload;
+import com.example.yk.myapplication.image.ImageViewActivity;
 import com.example.yk.myapplication.service.HelloService;
 import com.example.yk.myapplication.sharePreferences.SharePreferenceDemo;
 
@@ -70,10 +72,20 @@ public class MainActivity extends Activity {
         entry3.setName(SharePreferenceDemo.class);
         entry3.setTitle("sharePreferences");
 
+        MainEntry entry4 = new MainEntry();
+        entry4.setName(ImageViewActivity.class);
+        entry4.setTitle("zoomImageView");
+
+        MainEntry entry5 = new MainEntry();
+        entry5.setName(CameraActivity.class);
+        entry5.setTitle("camera");
+
         list.add(entry);
         list.add(entry1);
         list.add(entry2);
         list.add(entry3);
+        list.add(entry4);
+        list.add(entry5);
 //        String[] labels = {"activityDemo", "serviceDemo", "UploadImage"};
 
 
