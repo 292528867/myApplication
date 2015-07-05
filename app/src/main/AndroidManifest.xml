@@ -1,36 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.yk.myapplication" >
 
     <uses-sdk android:minSdkVersion="11" />
 
-    <!-- 调用相机 -->
-    <uses-feature
-        android:name="android.hardware.Camera"
-        android:required="true" />
 
-    <auses-permission android:name="android.permission.READ_PHONE_STATE" />
     <auses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="22" />
 
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <!--em  Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-
-    <auses-permission android:name="android.permission.READ_PHONE_STATE" />
-
-
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        tools:replace="android:label,android:icon" >
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data android:name="EASEMOB_APPKEY"  android:value="xlab#ugyufuy" />
+        <!-- 声明sdk所需的service SDK核心功能-->
+        <service android:name="com.easemob.chat.EMChatService" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -82,13 +96,49 @@
             android:label="@string/title_activity_camera" >
         </activity>
         <activity
-            android:name=".image.ZoomImageView"
-            android:label="@string/title_activity_zoom_image_view" >
-        </activity>
-        <activity
             android:name=".image.ImageViewActivity"
             android:label="@string/title_activity_image_view" >
         </activity>
+        <activity
+            android:name=".iamgeview.GalleryImageView"
+            android:label="@string/title_activity_gallery_image_view" >
+        </activity>
+        <activity
+            android:name=".iamgeview.MixView"
+            android:label="@string/title_activity_mix_view" >
+        </activity>
+        <activity
+            android:name=".SlidingMenuTest"
+            android:label="@string/title_activity_sliding_menu" >
+        </activity>
+        <activity
+            android:name=".retrofit.RetrofitTest"
+            android:icon="@drawable/app_icon_your_company"
+            android:label="@string/title_activity_retrofit_test"
+            android:logo="@drawable/app_icon_your_company"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Fragment.FragmentDemo"
+            android:label="@string/title_activity_fragment_demo" >
+        </activity>
+        <activity
+            android:name=".Fragment.FragmentDemo2"
+            android:label="@string/title_activity_fragment_demo2" >
+        </activity>
+        <activity android:name=".pageview.FragmentPagerSupportActivity"
+            android:label="FragmentPagerSupportActivity"/>
+        <activity android:name=".Fragment.FragmentViewpagerActivity"
+            android:label="FragmentViewpagerActivity"/>
+        <activity android:name=".EM.LoginActivity"
+            android:label="LoginActivity"/>
+        <activity android:name=".EM.EmMainActivity"
+            android:label="EmMainActivity"/>
     </application>
 
 </manifest>

@@ -3,11 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.yk.myapplication.activity.ActivityDemo">
 
-   <item android:id="@+id/search_bar"
-       android:icon="@mipmap/ic_launcher"
-       android:title="@string/searchDesc"
-       app:showAsAction="ifRoom"/>
 
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+
 </menu>
