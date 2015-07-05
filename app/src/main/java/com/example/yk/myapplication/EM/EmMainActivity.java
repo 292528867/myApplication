@@ -33,6 +33,7 @@ public class EmMainActivity extends Activity implements View.OnClickListener{
         switch (v.getId()) {
             case R.id.free:
                 //跳到免费提问接口
+
             case R.id.findDoctor:
                 //跳到医生列表接口
 

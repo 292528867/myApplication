@@ -41,6 +41,7 @@ public class RetrofitTest extends ActionBarActivity {
             public void onClick(View v) {
                 String user = edit_user.getText().toString();
                 pbar.setVisibility(View.VISIBLE);
+
                 RestAdapter restAdapter = new RestAdapter.Builder()
                         .setEndpoint(API).build();
                 TaobaoIPService git = restAdapter.create(TaobaoIPService.class);
