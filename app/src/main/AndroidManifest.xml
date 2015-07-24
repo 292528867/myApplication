@@ -46,7 +46,7 @@
         <service android:name="com.easemob.chat.EMChatService" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".EM.LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -135,10 +135,14 @@
             android:label="FragmentPagerSupportActivity"/>
         <activity android:name=".Fragment.FragmentViewpagerActivity"
             android:label="FragmentViewpagerActivity"/>
-        <activity android:name=".EM.LoginActivity"
-            android:label="LoginActivity"/>
+        <!--<activity android:name=".EM.LoginActivity"
+            android:label="LoginActivity"/>-->
         <activity android:name=".EM.EmMainActivity"
             android:label="EmMainActivity"/>
+        <activity android:name=".EM.DoctorActivity"
+            android:label="DoctorActivity"/>
+        <activity android:name=".EM.FreeActivity"
+            android:label="FreeActivity"/>
     </application>
 
 </manifest>
