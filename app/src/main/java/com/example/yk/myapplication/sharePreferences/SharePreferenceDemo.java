@@ -11,48 +11,45 @@ import android.widget.Toast;
 
 import com.example.yk.myapplication.R;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+import butterknife.OnClick;
+
 public class SharePreferenceDemo extends Activity {
 
-    EditText nameEdit =null;
-    EditText ageEdit = null;
-    Button saveButton = null;
-    Button resumeButton = null;
+    @InjectView(R.id.name_edit)
+    EditText nameEdit;
 
+    @InjectView(R.id.age_edit)
+    EditText ageEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share_preference_demo);
 
-         nameEdit = (EditText) findViewById(R.id.name_edit);
-         ageEdit = (EditText) findViewById(R.id.age_edit);
-         saveButton = (Button) findViewById(R.id.saveParam);
-         resumeButton = (Button) findViewById(R.id.resumeParam);
+        ButterKnife.inject(this);
 
-        saveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SharedPreferences sharedPreferences = getSharedPreferences("test", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString("name", nameEdit.getText().toString());
-                editor.putInt("age", Integer.parseInt(ageEdit.getText().toString()));
-                editor.commit();
-                Toast.makeText(SharePreferenceDemo.this, "保存成功", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        resumeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SharedPreferences sharedPreferences = getSharedPreferences("test", Context.MODE_PRIVATE);
-                String name = sharedPreferences.getString("name", "");
-                int age = sharedPreferences.getInt("age", 20);
-                nameEdit.setText(name);
-                ageEdit.setText(String.valueOf(age));
-            }
-        });
     }
 
 
+    @OnClick(R.id.saveParam)
+    protected void saveParam() {
+        SharedPreferences sharedPreferences = getSharedPreferences("test", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("name", nameEdit.getText().toString());
+        editor.putInt("age", Integer.parseInt(ageEdit.getText().toString()));
+        editor.commit();
+        Toast.makeText(SharePreferenceDemo.this, "保存成功", Toast.LENGTH_LONG).show();
+    }
+
+    @OnClick(R.id.resumeParam)
+    protected void resumeParam() {
+        SharedPreferences sharedPreferences = getSharedPreferences("test", Context.MODE_PRIVATE);
+        String name = sharedPreferences.getString("name", "");
+        int age = sharedPreferences.getInt("age", 20);
+        nameEdit.setText(name);
+        ageEdit.setText(String.valueOf(age));
+    }
 
 }
