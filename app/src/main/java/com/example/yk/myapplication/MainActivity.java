@@ -42,53 +42,32 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
 
       final  List<MainEntry> list = new ArrayList();
 
-        MainEntry entry = new MainEntry();
-        entry.setName(ActivityDemo.class);
-        entry.setTitle("acrivityDemo");
+        MainEntry entry = new MainEntry("acrivityDemo",ActivityDemo.class);
 
-        MainEntry entry1 = new MainEntry();
-        entry1.setName(HelloService.class);
-        entry1.setTitle("serviceDemo");
 
-        MainEntry entry2 = new MainEntry();
-        entry2.setName(ImageUpload.class);
-        entry2.setTitle("UploadImage");
+        MainEntry entry1 = new MainEntry("serviceDemo",HelloService.class);
 
-        MainEntry entry3 = new MainEntry();
-        entry3.setName(SharePreferenceDemo.class);
-        entry3.setTitle("sharePreferences");
+        MainEntry entry2 = new MainEntry("UploadImage",ImageUpload.class);
 
-        MainEntry entry4 = new MainEntry();
-        entry4.setName(ImageViewActivity.class);
-        entry4.setTitle("zoomImageView");
+        MainEntry entry3 = new MainEntry("sharePreferences",SharePreferenceDemo.class);
 
-        MainEntry entry5 = new MainEntry();
-        entry5.setName(CameraActivity.class);
-        entry5.setTitle("camera");
+        MainEntry entry4 = new MainEntry("zoomImageView",ImageViewActivity.class);
 
-        MainEntry entry6 = new MainEntry();
-        entry6.setName(MixView.class);
-        entry6.setTitle("mixView");
+        MainEntry entry5 = new MainEntry("camera",CameraActivity.class);
 
-        MainEntry entry7 = new MainEntry();
-        entry7.setName(SlidingMenuTest.class);
-        entry7.setTitle("slidingmenu");
+        MainEntry entry6 = new MainEntry("mixView",MixView.class);
 
-        MainEntry entry8 = new MainEntry();
-        entry8.setName(RetrofitTest.class);
-        entry8.setTitle("RetrofitTest");
+        MainEntry entry7 = new MainEntry("slidingmenu",SlidingMenuTest.class);
 
-        MainEntry entry9 = new MainEntry();
-        entry9.setName(FragmentViewpagerActivity.class);
-        entry9.setTitle("FragmentDemo");
+        MainEntry entry8 = new MainEntry("RetrofitTest",RetrofitTest.class);
 
-        MainEntry entry10 = new MainEntry();
-        entry10.setName(FragmentPagerSupportActivity.class);
-        entry10.setTitle("pageview");
+        MainEntry entry9 = new MainEntry("FragmentDemo",FragmentViewpagerActivity.class);
 
-        MainEntry entry11 = new MainEntry();
-        entry11.setName(LoginActivity.class);
-        entry11.setTitle("emTest");
+        MainEntry entry10 = new MainEntry("pageview",FragmentPagerSupportActivity.class);
+
+        MainEntry entry11 = new MainEntry("emTest", LoginActivity.class);
+
+        MainEntry entry12 = new MainEntry("recyclerView",recyclerViewActivity.class);
 
         list.add(entry);
         list.add(entry1);
@@ -102,6 +81,7 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
         list.add(entry9);
         list.add(entry10);
         list.add(entry11);
+        list.add(entry12);
 //        String[] labels = {"activityDemo", "serviceDemo", "UploadImage"};
 
 

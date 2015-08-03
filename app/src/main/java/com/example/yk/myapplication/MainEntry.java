@@ -8,6 +8,11 @@ public class MainEntry {
 
     private Class   name;
 
+    public MainEntry(String title, Class name) {
+        this.title = title;
+        this.name = name;
+    }
+
     public String getTitle() {
         return title;
     }

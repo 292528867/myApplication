@@ -5,4 +5,5 @@
 
     <dimen name="slidingmenu">200dp</dimen>
     <dimen name="sliding_width">50dp</dimen>
+    <dimen name="shape_size">64dp</dimen>
 </resources>
