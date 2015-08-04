@@ -145,10 +145,6 @@
             android:label="DoctorActivity"/>
         <activity android:name=".EM.FreeActivity"
             android:label="FreeActivity"/>
-        <activity android:name=".recyclerViewActivity"
-            android:label="recyclerViewActivity"/>
-        <activity android:name=".DetailActivity"
-            android:label="DetailActivity"/>
     </application>
 
 </manifest>

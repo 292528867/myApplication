@@ -67,7 +67,6 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
 
         MainEntry entry11 = new MainEntry("emTest", LoginActivity.class);
 
-        MainEntry entry12 = new MainEntry("recyclerView",recyclerViewActivity.class);
 
         list.add(entry);
         list.add(entry1);
@@ -80,9 +79,7 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
         list.add(entry8);
         list.add(entry9);
         list.add(entry10);
-        list.add(entry11);
-        list.add(entry12);
-//        String[] labels = {"activityDemo", "serviceDemo", "UploadImage"};
+        list.add(entry11);//        String[] labels = {"activityDemo", "serviceDemo", "UploadImage"};
 
 
 
