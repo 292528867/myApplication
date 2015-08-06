@@ -145,6 +145,8 @@
             android:label="DoctorActivity"/>
         <activity android:name=".EM.FreeActivity"
             android:label="FreeActivity"/>
+        <activity android:name=".RecyclerView.RecyclerViewActivity"
+            android:label="RecyclerViewActivity"/>
     </application>
 
 </manifest>
