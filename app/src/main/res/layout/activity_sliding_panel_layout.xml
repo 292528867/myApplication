@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_panel"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <fragment
+        android:id="@+id/leftfragment"
+        android:name="com.example.yk.myapplication.slidingPanelLayout.BookMarkerFragement"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left" />
+
+    <fragment
+        android:id="@+id/rightfragment"
+        android:name="com.example.yk.myapplication.slidingPanelLayout.ShowFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight="1" />
+
+</android.support.v4.widget.SlidingPaneLayout>

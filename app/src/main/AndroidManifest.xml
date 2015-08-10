@@ -149,6 +149,8 @@
             android:label="RecyclerViewActivity"/>
         <activity android:name=".drawerLayout.DrawerLayoutActivity"
             android:label="DrawerLayoutActivity"/>
+        <activity android:name=".slidingPanelLayout.SlidingPanelLayoutActivity"
+            android:label="SlidingPanelLayoutActivity"/>
     </application>
 
 </manifest>

@@ -23,6 +23,7 @@ import com.example.yk.myapplication.pageview.FragmentPagerSupportActivity;
 import com.example.yk.myapplication.retrofit.RetrofitTest;
 import com.example.yk.myapplication.service.HelloService;
 import com.example.yk.myapplication.sharePreferences.SharePreferenceDemo;
+import com.example.yk.myapplication.slidingPanelLayout.SlidingPanelLayoutActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +46,6 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
       final  List<MainEntry> list = new ArrayList();
 
         MainEntry entry = new MainEntry("acrivityDemo",ActivityDemo.class);
-
 
         MainEntry entry1 = new MainEntry("serviceDemo",HelloService.class);
 
@@ -73,6 +73,8 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
 
         MainEntry entry13 = new MainEntry("DrawerLayout", DrawerLayoutActivity.class);
 
+        MainEntry entry14 = new MainEntry("SlidingPanelLayoutActivity", SlidingPanelLayoutActivity.class);
+
         list.add(entry);
         list.add(entry1);
         list.add(entry2);
@@ -85,9 +87,9 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
         list.add(entry9);
         list.add(entry10);
         list.add(entry11);
-        list.add(entry12);//        String[] labels = {"activityDemo", "serviceDemo", "UploadImage"};
-        list.add(entry13);//        String[] labels = {"activityDemo", "serviceDemo", "UploadImage"};
-
+        list.add(entry12);
+        list.add(entry13);
+        list.add(entry14);
 
 
         MainAdapter myAdapter = new MainAdapter(this, list);
