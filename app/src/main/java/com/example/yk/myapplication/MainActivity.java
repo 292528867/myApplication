@@ -15,6 +15,7 @@ import com.example.yk.myapplication.Fragment.FragmentViewpagerActivity;
 import com.example.yk.myapplication.RecyclerView.RecyclerViewActivity;
 import com.example.yk.myapplication.activity.ActivityDemo;
 import com.example.yk.myapplication.camera.CameraActivity;
+import com.example.yk.myapplication.drawerLayout.DrawerLayoutActivity;
 import com.example.yk.myapplication.iamgeview.MixView;
 import com.example.yk.myapplication.image.ImageUpload;
 import com.example.yk.myapplication.image.ImageViewActivity;
@@ -70,6 +71,8 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
 
         MainEntry entry12 = new MainEntry("recyclerView", RecyclerViewActivity.class);
 
+        MainEntry entry13 = new MainEntry("DrawerLayout", DrawerLayoutActivity.class);
+
         list.add(entry);
         list.add(entry1);
         list.add(entry2);
@@ -83,6 +86,7 @@ public class MainActivity extends Activity implements SwipeRefreshLayout.OnRefre
         list.add(entry10);
         list.add(entry11);
         list.add(entry12);//        String[] labels = {"activityDemo", "serviceDemo", "UploadImage"};
+        list.add(entry13);//        String[] labels = {"activityDemo", "serviceDemo", "UploadImage"};
 
 
 

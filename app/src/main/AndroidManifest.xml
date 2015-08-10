@@ -147,6 +147,8 @@
             android:label="FreeActivity"/>
         <activity android:name=".RecyclerView.RecyclerViewActivity"
             android:label="RecyclerViewActivity"/>
+        <activity android:name=".drawerLayout.DrawerLayoutActivity"
+            android:label="DrawerLayoutActivity"/>
     </application>
 
 </manifest>
